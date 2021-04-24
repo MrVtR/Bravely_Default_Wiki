@@ -1,7 +1,6 @@
 import './home.scss';
 import getApi from '../../services/api';
 import { useState, useEffect } from 'react';
-
 import { Nav, CharacterDiv, Footer } from '../../components/exportComponents';
 
 function Home() {

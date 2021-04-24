@@ -1,4 +1,4 @@
-import { Home } from './pages/exportPages';
+import { Home, Personagens } from './pages/exportPages';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 function App() {
   return (
@@ -6,6 +6,7 @@ function App() {
       <Switch>
         {/* <Route path="/detail" component={ChDetail} /> */}
         <Route path="/" exact component={Home} />
+        <Route path="/personagens" exact component={Personagens} />
       </Switch>
     </Router>
   );

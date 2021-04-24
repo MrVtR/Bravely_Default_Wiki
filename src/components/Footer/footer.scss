@@ -6,8 +6,12 @@
   background-color: rgba(255, 255, 255, 0.7);
   font-family: Matrix;
   font-size: 16pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   a {
     text-decoration: none;
     color: black;
+    padding: 0 2.5px 0 2.5px;
   }
 }
