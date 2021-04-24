@@ -2,7 +2,6 @@
   font-family: Matrix;
   src: url('../../assets/fonts/Matrix\ II\ Regular.otf');
 }
-@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
 body {
   background-image: url('../../assets/images/background3.jpg');
   background-repeat: no-repeat;
@@ -10,7 +9,7 @@ body {
   width: 100%;
   height: 100%;
 }
-.teste {
+.App {
   border-radius: 5px;
   margin: 0 30px;
   align-self: center;
@@ -23,34 +22,4 @@ body {
   align-items: flex-start;
   width: auto;
   height: 130vh;
-}
-.description {
-  width: 350px;
-  height: 500px;
-  text-align: justify;
-  text-justify: inter-word;
-  font-family: 'Goudy Bookletter 1911', serif;
-  font-size: 12pt;
-}
-.img {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.title {
-  font-family: Matrix;
-  font-size: 28pt;
-}
-.footer {
-  border-radius: 5px;
-  padding-left: 30px;
-  margin: 0 30px 0 30px;
-  border: 1px solid black;
-  background-color: rgba(255, 255, 255, 0.7);
-  font-family: Matrix;
-  font-size: 16pt;
-}
-a {
-  text-decoration: none;
-  color: black;
 }
