@@ -1,4 +1,4 @@
 import Nav from './Nav/nav';
-import CharacterDiv from './CharacterDiv/characterDiv';
-import Footer from './Footer/footer';
+import CharacterDiv from './characterDiv/characterDiv';
+import Footer from './footer/footer';
 export { Nav, CharacterDiv, Footer };
