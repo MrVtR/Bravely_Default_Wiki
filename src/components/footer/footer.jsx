@@ -4,7 +4,11 @@ import linkedin from '../../assets/icons/linkedin.svg';
 function Footer(props) {
   return (
     <footer className="footer">
-      Feito por Vítor Ribeiro - 2021
+      <div className="author">
+        <span dataHover="Feito por Vítor Ribeiro - 2021">
+          Feito por Vítor Ribeiro - 2021
+        </span>
+      </div>
       <a href="https://www.linkedin.com/in/vítor-ribeiro/">
         <img src={linkedin} alt="Linkedin" />
       </a>
