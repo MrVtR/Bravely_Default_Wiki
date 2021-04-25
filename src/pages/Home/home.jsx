@@ -15,7 +15,7 @@ function Home() {
     return (
       <>
         <Nav />
-        <div className="App">
+        <div className="home">
           {personagens.map((element, key) => {
             return (
               <CharacterDiv
