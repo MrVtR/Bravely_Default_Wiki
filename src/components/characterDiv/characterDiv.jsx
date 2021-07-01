@@ -7,7 +7,7 @@ function CharacterDiv(props) {
     <div key={id} className="img">
       <h1 className="title">{name}</h1>
       <Tilt className="Tilt" options={{ perspective: 2200, scale: 1.05 }}>
-        <img src={image} alt={name} className="Image"></img>
+        <img src={image} alt={name} className="image"></img>
       </Tilt>
       <div className="description">
         <h2>{description}</h2>

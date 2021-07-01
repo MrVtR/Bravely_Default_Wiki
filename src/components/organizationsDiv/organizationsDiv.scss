@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+.organization-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .organization-title {
+    font-family: Matrix;
+    font-size: 1.8em;
+  }
+  .organization-description {
+    width: 350px;
+    height: 500px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Goudy Bookletter 1911', serif;
+    font-size: 12pt;
+  }
+  .organization-tilt {
+    .organization-image {
+      height: 650px;
+      width: auto;
+    }
+  }
+}

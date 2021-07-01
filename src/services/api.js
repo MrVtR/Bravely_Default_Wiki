@@ -1,6 +1,6 @@
 async function getApi(gateway) {
   const axios = require('axios');
-  const url = 'https://606baa00f8678400172e6751.mockapi.io/Characters';
+  const url = 'https://606baa00f8678400172e6751.mockapi.io/' + gateway;
   const request = await axios.get(url).then(
     (response) => {
       // console.log(response.data);
