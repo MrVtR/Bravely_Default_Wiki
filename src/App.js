@@ -1,6 +1,5 @@
 import { Home, Personagens } from './pages/exportPages';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import './styles/App.scss';
 function App() {
   return (
     <Router>

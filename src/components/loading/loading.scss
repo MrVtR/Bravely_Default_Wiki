@@ -1,0 +1,34 @@
+@font-face {
+  font-family: Matrix;
+  src: url('../../assets/fonts/Matrix\ II\ Regular.otf');
+}
+
+body {
+  background-image: none;
+  background-color: black;
+  overflow-y: hidden;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s infinite alternate;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 20%;
+    }
+  }
+  .loading-text {
+    color: white;
+    font-family: Matrix;
+    letter-spacing: 10px;
+  }
+  .loading-image {
+    background-color: white;
+  }
+}

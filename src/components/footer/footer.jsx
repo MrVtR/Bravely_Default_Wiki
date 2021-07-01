@@ -9,10 +9,18 @@ function Footer(props) {
           Feito por Vítor Ribeiro - 2021
         </span>
       </div>
-      <a href="https://www.linkedin.com/in/vítor-ribeiro/">
+      <a
+        href="https://www.linkedin.com/in/vítor-ribeiro/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <img src={linkedin} alt="Linkedin" />
       </a>
-      <a href="https://github.com/MrVtR?tab=repositories">
+      <a
+        href="https://github.com/MrVtR?tab=repositories"
+        target="_blank"
+        rel="noreferrer"
+      >
         <img src={github} alt="Github" />
       </a>
     </footer>
