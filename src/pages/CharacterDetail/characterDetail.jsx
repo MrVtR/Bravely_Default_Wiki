@@ -26,7 +26,11 @@ function CharacterDetail(props) {
             <Tilt className="Tilt" options={{ perspective: 2200, scale: 1.05 }}>
               <img src={image} alt="character-infos" />
             </Tilt>
-            <h3 className="character-text">{description}</h3>
+            <div className="character-text-container">
+              {description.map((element, key) => {
+                return <h3 className="character-text">{element}</h3>;
+              })}
+            </div>
           </div>
         </div>
         <Footer />
