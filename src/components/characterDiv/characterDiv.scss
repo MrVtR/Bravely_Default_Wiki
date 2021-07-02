@@ -11,8 +11,17 @@
     width: 350px;
     height: 500px;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
     text-justify: inter-word;
     font-family: 'Goudy Bookletter 1911', serif;
     font-size: 12pt;
+    .link {
+      width: 100%;
+      text-decoration: none;
+      .button {
+        width: 100%;
+      }
+    }
   }
 }

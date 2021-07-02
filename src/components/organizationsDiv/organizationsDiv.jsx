@@ -15,6 +15,7 @@ function CharacterDiv(props) {
       <div className="organization-description">
         <h2>{description}</h2>
       </div>
+      <button>Ver mais</button>
     </div>
   );
 }

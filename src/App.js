@@ -1,4 +1,9 @@
-import { Home, Personagens, Organizacoes } from './pages/exportPages';
+import {
+  Home,
+  Personagens,
+  Organizacoes,
+  CharacterDetail,
+} from './pages/exportPages';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 function App() {
   return (
@@ -8,6 +13,7 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/personagens" exact component={Personagens} />
         <Route path="/organizacoes" exact component={Organizacoes} />
+        <Route path="/detail" exact component={CharacterDetail} />
       </Switch>
     </Router>
   );

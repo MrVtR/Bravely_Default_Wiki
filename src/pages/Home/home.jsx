@@ -19,7 +19,7 @@ function Home() {
   }
   useEffect(() => {
     (async () => {
-      const apiResponse = await getApi('Characters');
+      const apiResponse = await getApi('MainCharacters');
       setPersonagens(() => apiResponse);
       setTimeout(() => {
         setLoad(true);
