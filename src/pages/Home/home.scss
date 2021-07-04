@@ -69,10 +69,11 @@ body {
         text-align: center;
         margin: 0;
         padding: 20px 0;
+        font-weight: bold;
+        font-style: italic;
+        font-family: Matrix;
       }
-      h2,
-      h3,
-      h4 {
+      h3 {
         font-family: Matrix;
         font-weight: normal;
       }
@@ -103,7 +104,24 @@ body {
             width: 150px;
           }
           h4 {
+            font-family: Matrix;
+            font-weight: normal;
             margin-top: 0;
+          }
+          .game-name {
+            font-weight: bold;
+            font-style: italic;
+          }
+        }
+        .release,
+        .publisher {
+          .flag-container {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            .flag-text {
+              margin: 0 0 0 10px;
+            }
           }
         }
         .director {

@@ -3,6 +3,12 @@ import getApi from '../../services/api';
 import { useState, useEffect } from 'react';
 import image from '../../assets/images/background3.jpg';
 import cover from '../../assets/images/bravely-cover.jpg';
+import jpIcon from '../../assets/icons/JP.webp';
+import ukIcon from '../../assets/icons/UK.webp';
+import auIcon from '../../assets/icons/AU.webp';
+import naIcon from '../../assets/icons/NA.webp';
+import globalIcon from '../../assets/icons/global.png';
+
 import { Nav, Footer, Loading } from '../../components/exportComponents';
 
 function Home() {
@@ -32,7 +38,7 @@ function Home() {
         <div className="home">
           <div className="data-container">
             <div className="game-details">
-              <h2>Bravely Default: Flying Fairy</h2>
+              <h2>Bravely Default: Where the Fairy Flies</h2>
               <figure className="figure-cover">
                 <img src={cover} alt="Capa do jogo" className="cover-game" />
                 <figcaption className="fig">
@@ -47,8 +53,14 @@ function Home() {
                 <div className="publisher">
                   <h3 className="title">Publicadora:</h3>
                   <div>
-                    <h4>JP: Square Enix</h4>
-                    <h4>WW: Nintendo</h4>
+                    <div className="flag-container">
+                      <img src={jpIcon} alt="Japão: "></img>
+                      <h4 className="flag-text">Square Enix</h4>
+                    </div>
+                    <div className="flag-container">
+                      <img src={globalIcon} alt="Global: "></img>
+                      <h4 className="flag-text">Nintendo</h4>
+                    </div>
                   </div>
                 </div>
                 <div className="director">
@@ -85,14 +97,30 @@ function Home() {
                 <div className="release">
                   <h3 className="title">Lançamento:</h3>
                   <div>
-                    <h4>October 11, 2012</h4>
-                    <h4>Flying Fairy</h4>
-                    <h4>JP: October 11, 2012</h4>
-                    <h4>For the Sequel</h4>
-                    <h4>JP: December 5, 2013</h4>
-                    <h4>EU: December 6, 2013</h4>
-                    <h4>AU: December 7, 2013</h4>
-                    <h4>NA: February 7, 2014</h4>
+                    <h4 className="game-name">Bravely Default: Flying Fairy</h4>
+                    <div className="flag-container">
+                      <img src={jpIcon} alt="Japão: "></img>
+                      <h4 className="flag-text">11 de Outubro de 2012</h4>
+                    </div>
+                    <h4 className="game-name">
+                      Bravely Default: For the Sequel
+                    </h4>
+                    <div className="flag-container">
+                      <img src={jpIcon} alt="Japão: "></img>
+                      <h4 className="flag-text">5 de Dezembro de 2013</h4>
+                    </div>
+                    <div className="flag-container">
+                      <img src={ukIcon} alt="Europa: "></img>
+                      <h4 className="flag-text">6 de Dezembro de 2013</h4>
+                    </div>
+                    <div className="flag-container">
+                      <img src={auIcon} alt="Austrália: "></img>
+                      <h4 className="flag-text">7 de Dezembro de 2013</h4>
+                    </div>
+                    <div className="flag-container">
+                      <img src={naIcon} alt="América: "></img>
+                      <h4 className="flag-text">7 de Fevereiro de 2014</h4>
+                    </div>
                   </div>
                 </div>
                 <div className="genre">
