@@ -130,10 +130,13 @@ body {
       }
       .figure-cover {
         margin-top: 5px;
+        display: flex;
+        flex-direction: column;
         .fig {
           font-size: 16px;
           font-family: Matrix;
           text-align: center;
+          margin-bottom: 20px;
         }
       }
     }

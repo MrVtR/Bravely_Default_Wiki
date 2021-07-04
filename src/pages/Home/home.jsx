@@ -2,7 +2,9 @@ import './home.scss';
 import getApi from '../../services/api';
 import { useState, useEffect } from 'react';
 import image from '../../assets/images/background3.jpg';
-import cover from '../../assets/images/bravely-cover.jpg';
+import euCover from '../../assets/images/bravely-euCover.jpg';
+import naCover from '../../assets/images/bravely-naCover.jpg';
+import jpCover from '../../assets/images/bravely-jpCover.jpg';
 import jpIcon from '../../assets/icons/JP.webp';
 import ukIcon from '../../assets/icons/UK.webp';
 import auIcon from '../../assets/icons/AU.webp';
@@ -40,9 +42,17 @@ function Home() {
             <div className="game-details">
               <h2>Bravely Default: Where the Fairy Flies</h2>
               <figure className="figure-cover">
-                <img src={cover} alt="Capa do jogo" className="cover-game" />
+                <img src={naCover} alt="Capa do jogo" className="cover-game" />
+                <figcaption className="fig">
+                  Box art americana do jogo
+                </figcaption>
+                <img src={euCover} alt="Capa do jogo" className="cover-game" />
                 <figcaption className="fig">
                   Box art europeia do jogo
+                </figcaption>
+                <img src={jpCover} alt="Capa do jogo" className="cover-game" />
+                <figcaption className="fig">
+                  Box art japonesa do jogo
                 </figcaption>
               </figure>
               <div className="details">
@@ -141,6 +151,10 @@ function Home() {
             <div className="text-container">
               <h1 className="page-title">{homeData[0].title}</h1>
               {homeData[0].description.map((element, key) => {
+                return <p>{element}</p>;
+              })}
+              <h1 className="page-title">{homeData[1].title}</h1>
+              {homeData[1].description.map((element, key) => {
                 return <p>{element}</p>;
               })}
             </div>
