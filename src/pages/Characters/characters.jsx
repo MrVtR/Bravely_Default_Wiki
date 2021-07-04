@@ -1,18 +1,17 @@
-import './organizacoes.scss';
-import {
-  Nav,
-  Footer,
-  Loading,
-  OrganizationsDiv,
-} from '../../components/exportComponents';
+import './characters.scss';
 import getApi from '../../services/api';
 import { useState, useEffect } from 'react';
 import image from '../../assets/images/background3.jpg';
+import {
+  Nav,
+  CharacterDiv,
+  Footer,
+  Loading,
+} from '../../components/exportComponents';
 
-function Organizacoes() {
-  const [organizacoes, setOrganizacoes] = useState();
+function Personagens() {
+  const [personagens, setPersonagens] = useState();
   const [load, setLoad] = useState(false);
-
   if (!load) {
     document.body.style.backgroundImage = 'none';
     document.body.style.backgroundColor = 'black';
@@ -20,24 +19,23 @@ function Organizacoes() {
   }
   useEffect(() => {
     (async () => {
-      const apiResponse = await getApi('Organizations');
-      setOrganizacoes(() => apiResponse);
+      const apiResponse = await getApi('Characters');
+      setPersonagens(() => apiResponse);
       setTimeout(() => {
         setLoad(true);
       }, 6000);
     })();
   }, []);
-  if (load && organizacoes) {
+  if (load && personagens) {
     document.body.style.backgroundImage = 'url(' + image + ')';
     document.body.style.overflowY = 'visible';
     return (
       <div className="slide-in">
         <Nav />
-        <div className="organizacoes">
-          {organizacoes.map((element, key) => {
-            console.log(element.name);
+        <div className="personagens">
+          {personagens.map((element, key) => {
             return (
-              <OrganizationsDiv
+              <CharacterDiv
                 name={element.name}
                 id={key}
                 image={element.image}
@@ -53,5 +51,4 @@ function Organizacoes() {
     return <Loading />;
   }
 }
-
-export default Organizacoes;
+export default Personagens;
