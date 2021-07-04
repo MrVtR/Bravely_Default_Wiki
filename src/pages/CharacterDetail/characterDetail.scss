@@ -3,7 +3,7 @@
   src: url('../../assets/fonts/Matrix\ II\ Regular.otf');
 }
 body {
-  overflow-x: hidden;
+  overflow-x: visible;
   background-image: url('../../assets/images/background3.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -49,7 +49,7 @@ body {
   border-radius: 5px;
   margin: 0 30px;
   align-self: center;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid black;
   font-family: Roboto;
   display: flex;
@@ -65,8 +65,17 @@ body {
     letter-spacing: 5px;
   }
   h2,
-  h3 {
+  p {
     font-family: Matrix;
+    font-size: 16px;
+    text-indent: 50px;
+    text-align: justify;
+    line-height: 1.4;
+  }
+  p::first-letter {
+    font-size: 36px;
+    font-weight: bold;
+    color: #903;
   }
   .character-name {
     margin-bottom: 50px;
@@ -75,19 +84,26 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    align-items: flex-start;
     .character-text-container {
+      border-right: 1px solid;
+      height: 1250px;
       display: flex;
       flex-direction: column;
+      padding: 5px;
+      margin-left: 20px;
+      flex-wrap: wrap;
     }
     .character-text {
-      width: 450px;
+      padding: 0 5px;
+      width: 470px;
+      margin: 10px;
+      font-weight: normal;
     }
     .Tilt {
-      height: 100%;
+      margin-left: 100px;
       img {
         height: 700px;
-        padding-bottom: 50px;
       }
     }
   }

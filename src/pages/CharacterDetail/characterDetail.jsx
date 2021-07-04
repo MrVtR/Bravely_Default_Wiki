@@ -28,7 +28,7 @@ function CharacterDetail(props) {
             </Tilt>
             <div className="character-text-container">
               {description.map((element, key) => {
-                return <h3 className="character-text">{element}</h3>;
+                return <p className="character-text">{element}</p>;
               })}
             </div>
           </div>
