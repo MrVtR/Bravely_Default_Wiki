@@ -49,13 +49,95 @@ body {
   border-radius: 5px;
   margin: 0 30px;
   align-self: center;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid black;
   font-family: Roboto;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  width: auto;
-  height: 130vh;
+  flex-direction: column;
+  .data-container {
+    display: flex;
+    flex-direction: row;
+    .game-details {
+      border: 2px solid;
+      margin: 50px 50px 50px 20px;
+      display: flex;
+      flex-direction: column;
+      height: 50%;
+      h2 {
+        background-color: #b9aa8b;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 20px 0;
+      }
+      h2,
+      h3,
+      h4 {
+        font-family: Matrix;
+        font-weight: normal;
+      }
+      .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 0 20px 0;
+        margin: 20px 0 0 100px;
+        .developer,
+        .publisher,
+        .director,
+        .producer,
+        .designer,
+        .artist,
+        .writers,
+        .composer,
+        .plataform,
+        .release,
+        .genre,
+        .game-mode,
+        .game-sequel {
+          display: flex;
+          .title {
+            border-right: 1px solid;
+            padding-right: 5px;
+            margin: 0 30px 0 0;
+            width: 150px;
+          }
+          h4 {
+            margin-top: 0;
+          }
+        }
+        .director {
+          display: flex;
+        }
+      }
+      .figure-cover {
+        margin-top: 5px;
+        .fig {
+          font-size: 16px;
+          font-family: Matrix;
+          text-align: center;
+        }
+      }
+    }
+    .text-container {
+      h1 {
+        text-align: center;
+        letter-spacing: 5px;
+      }
+      p::first-letter {
+        font-size: 36px;
+        font-weight: bold;
+        color: #903;
+      }
+      p {
+        font-family: Matrix;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 1.6;
+        margin-right: 50px;
+        text-align: justify;
+        text-indent: 50px;
+      }
+    }
+  }
 }

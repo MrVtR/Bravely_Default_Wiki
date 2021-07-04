@@ -32,7 +32,7 @@ function Personagens() {
     return (
       <div className="slide-in">
         <Nav />
-        <div className="home">
+        <div className="personagens">
           {personagens.map((element, key) => {
             return (
               <CharacterDiv

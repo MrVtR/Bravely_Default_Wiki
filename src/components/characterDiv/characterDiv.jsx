@@ -11,15 +11,18 @@ function CharacterDiv(props) {
     description,
   };
   return (
-    <div key={id} className="img">
-      <h1 className="title">{name}</h1>
-      <Tilt className="Tilt" options={{ perspective: 2200, scale: 1.05 }}>
-        <Link to={newTo} className="link">
-          <img src={image} alt={name} className="image"></img>
+    <div key={id} className="character-container">
+      <h1 className="character-title">{name}</h1>
+      <Tilt
+        className="character-tilt"
+        options={{ perspective: 2200, scale: 1.05 }}
+      >
+        <Link to={newTo} className="character-link">
+          <img src={image} alt={name} className="character-image"></img>
         </Link>
       </Tilt>
-      <div className="description">
-        <h2>{description}</h2>
+      <div className="character-description">
+        <h2>{description[0]}</h2>
       </div>
     </div>
   );

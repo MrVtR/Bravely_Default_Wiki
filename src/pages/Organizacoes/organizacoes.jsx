@@ -33,7 +33,7 @@ function Organizacoes() {
     return (
       <div className="slide-in">
         <Nav />
-        <div className="home">
+        <div className="organizacoes">
           {organizacoes.map((element, key) => {
             console.log(element.name);
             return (
