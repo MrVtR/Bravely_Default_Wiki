@@ -1,5 +1,10 @@
 import './villains.scss';
-import { Nav, Footer, Loading } from '../../components/exportComponents';
+import {
+  Nav,
+  Footer,
+  Loading,
+  CharacterDiv,
+} from '../../components/exportComponents';
 import { useState, useEffect } from 'react';
 import getApi from '../../services/api';
 import image from '../../assets/images/background3.jpg';
@@ -27,6 +32,18 @@ function Villains() {
     return (
       <div className="slide-in">
         <Nav />
+        <div className="viloes">
+          {viloes.map((element, key) => {
+            return (
+              <CharacterDiv
+                name={element.name}
+                id={key}
+                image={element.image}
+                description={element.description}
+              />
+            );
+          })}
+        </div>
         <Footer />
       </div>
     );
