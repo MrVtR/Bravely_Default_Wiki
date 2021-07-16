@@ -1,7 +1,8 @@
 # Bravely_Default_API
 
 ## Conceito do projeto
-Este projeto consiste em construir uma Wiki para o jogo Bravely Default, de forma que seja feito o projeto de modo Fullstack, utilizando ReactJS para o Front-end e NodeJS para o Back-End. A parte Front-End do projeto é o design e funções web das páginas,além do consumo da API feita por mim, enquanto o Back-End fica com a construção e configuração da API, que pode ser verificado no respositório deste link.<br/>
+Este projeto consiste em construir uma Wiki para o jogo Bravely Default do Nintendo 3DS, tendo o objetivo de fazer um projeto FullStack, utilizando ReactJS para o Front-end e NodeJS para o Back-End. <br/> 
+A parte Front-End do projeto é o design e funções web das páginas,além do consumo da API feita por mim, enquanto o Back-End fica com a construção e configuração da API, que podem ser verificadas no respositório [deste link](https://github.com/MrVtR/Bravely_Default_API)<br/>
 O site criado conta com Cinco abas principais planejadas:
 1. **Home** - Página inicial do projeto, onde é apresentado a origem do jogo, juntamente com sua história completa. Além disso, mostro também as capas de todas as versões regionais do jogo: Americana, Europeia e Japonesa
 2. **Personagens** - Página com a função de exibir os personagens principais do jogo. No momento, esta aba está em progresso, contando atualmente com os 4 personagens jogáveis, suas origens e uma função de clique para ver mais detalhes do personagem, incluindo sua história inteira dentro do jogo. Futuramente, esta aba será comtemplada com todos os personagens que ajudam os principais ao decorrer da história
@@ -14,6 +15,8 @@ O site criado conta com Cinco abas principais planejadas:
 - [x] Criação e configuração para consumo da API na página Personagens
 - [x] Criação e configuração para consumo da API na página Vilões
 - [x] Criação e configuração para consumo da API na página Organizações
+- [x] Implementação de função de Mais Detalhes para ser utilizado nas páginas
+- [x] Implementação de Página de Loading, contando com tempo de loading baseado no consumo da API e estilização interativa com o auxílio do React Tilt
 - [ ] Acrescentar mais dados na API para as abas de Personagens e Vilões
 - [ ] Criar uma galeria de fotos individual para cada item que será mostrado na função de Mais Detalhes, utilizada por todas as páginas, com exceção da Home
 - [ ] Criar página de Locais e acrescentar os dados necessários na API
