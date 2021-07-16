@@ -18,6 +18,7 @@ O site criado conta com Cinco abas principais planejadas:
 - [x] Implementação de função de Mais Detalhes para ser utilizado nas páginas
 - [x] Implementação de Página de Loading, contando com tempo de loading baseado no consumo da API e estilização interativa com o auxílio do React Tilt
 - [ ] Acrescentar mais dados na API para as abas de Personagens e Vilões
+- [ ] Traduzir textos que estão alocados na API para que a aplicação inteira fique em Português
 - [ ] Criar uma galeria de fotos individual para cada item que será mostrado na função de Mais Detalhes, utilizada por todas as páginas, com exceção da Home
 - [ ] Criar página de Locais e acrescentar os dados necessários na API
 - [ ] Planejar páginas de descrições de Itens e Classes do jogo
