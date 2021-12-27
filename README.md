@@ -1,4 +1,4 @@
-# Bravely_Default_API
+# Bravely_Default_Wiki
 
 ## Conceito do projeto
 Este projeto consiste em construir uma Wiki para o jogo Bravely Default do Nintendo 3DS, tendo o objetivo de fazer um projeto FullStack, utilizando ReactJS para o Front-end e NodeJS para o Back-End. <br/> 
